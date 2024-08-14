@@ -1,38 +1,44 @@
+/* Base styles for the App component */
 .App {
   text-align: center;
 }
 
+/* Styles for the logo within the App */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Responsive height based on viewport */
+  pointer-events: none; /* Disables interactions like mouse events */
 }
 
+/* Animation for the logo when motion preferences are not reduced */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Infinite spinning animation */
   }
 }
 
+/* Header styles within the App */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #282c34; /* Dark background for the header */
+  min-height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vmin); /* Responsive font size */
   color: white;
 }
 
+/* Link styles within the App */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Bright blue color for links */
 }
 
+/* Keyframes for the spinning logo animation */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* End rotation */
   }
 }
